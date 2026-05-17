@@ -50,4 +50,9 @@ using \eqref{eq:sum-infinite-geo-prog} we can find fractional representations of
 repeating decimals, see [this video](https://www.youtube.com/watch?v=Ns-dE09vzqo) for a quick explanation.
 
 
+#### problems {#problems}
+
+solutions to this section's problems can be found [here](/assets/boas-mm3e-c1s1-solutions.pdf).
+
+
 ### definitions and notation {#definitions-and-notation}
