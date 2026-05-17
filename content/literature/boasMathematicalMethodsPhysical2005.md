@@ -53,6 +53,3 @@ repeating decimals, see [this video](https://www.youtube.com/watch?v=Ns-dE09vzqo
 #### problems {#problems}
 
 solutions to this section's problems can be found [here](/assets/boas-mm3e-c1s1-solutions.pdf).
-
-
-### definitions and notation {#definitions-and-notation}
