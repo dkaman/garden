@@ -4,6 +4,9 @@ tags: ["physics", "math"]
 draft: false
 ---
 
+Boas, Mary L. <i>Mathematical Methods in the Physical Sciences</i>. 22 Jul. 2005. 3rd ed., Wiley, 2005.
+
+
 ## chapter 1 - infinite series, power series {#chapter-1-infinite-series-power-series}
 
 

@@ -5,6 +5,11 @@ tags: ["physics"]
 draft: false
 ---
 
+Kleppner, Daniel, and Robert Kolenkow. <i>An Introduction to Mechanics</i>. 1st ed., McGraw Hill, 1973.
+
+this is the primary text for [mit ocw 8.012 - physics I - classical mechanics]({{< relref "20260516223414-mit_ocw_8_012_physics_i_classical_mechanics.md" >}})
+
+
 ## chapter 1: vectors and kinematics - a few mathematical preliminaries {#chapter-1-vectors-and-kinematics-a-few-mathematical-preliminaries}
 
 
@@ -83,7 +88,7 @@ and conversely:
 
 -  addition of two vectors
 
-    to add \\(\mathbf{B}\\) to \\(\mathbf{A}\\) place the tail of \\(\mathbf{B}\\) at the head
+    to add \\(\mathbf{B}\\) to \\(\mathbf{A}\\), place the tail of \\(\mathbf{B}\\) at the head
     of \\(\mathbf{A}\\), and the sum is the vector from the tail of \\(\mathbf{A}\\) to the
     head of \\(\mathbf{B}\\).
 
