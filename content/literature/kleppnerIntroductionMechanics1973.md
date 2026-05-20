@@ -90,8 +90,52 @@ and conversely:
 
     to add \\(\mathbf{B}\\) to \\(\mathbf{A}\\), place the tail of \\(\mathbf{B}\\) at the head
     of \\(\mathbf{A}\\), and the sum is the vector from the tail of \\(\mathbf{A}\\) to the
-    head of \\(\mathbf{B}\\).
-
-    ex:
+    head of \\(\mathbf{B}\\), like:
 
     {{< figure src="/assets/vector-addition.png" >}}
+
+    since \\(\mathbf{A} - \mathbf{B} = \mathbf{A} + (-\mathbf{B})\\), in order to
+    subtract \\(\mathbf{B}\\) from \\(\mathbf{A}\\), we can just multiply \\(\mathbf{B}\\) by
+    \\(-1\\) and then add, like:
+
+    {{< figure src="/assets/vector-subtraction.png" >}}
+
+    this can also be constructed by placing the _head_ of \\(\mathbf{B}\\) at the _head_
+    of \\(\mathbf{A}\\), then \\(\mathbf{A} - \mathbf{B}\\) is drawn from the tail of
+    \\(\mathbf{A}\\) to the tail of \\(\mathbf{B}\\).
+
+    **commutative law**:
+    \\[
+
+    \begin{aligned}
+    \mathbf{A} + \mathbf{B} = \mathbf{B} + \mathbf{A}
+    \end{aligned}
+
+    \\]
+
+    **associative law**:
+    \\[
+
+    \begin{aligned}
+    \mathbf{A} + (\mathbf{B} + \mathbf{C}) &= (\mathbf{A} + \mathbf{B}) + \mathbf{C} \\\\
+    \mathit{c}(\mathit{d}\mathbf{A}) &= (\mathit{c}\mathit{d})\mathbf{A}
+    \end{aligned}
+
+    \\]
+
+    **distributive law**:
+    \\[
+
+    \begin{aligned}
+    (\mathit{c} + \mathit{d})\mathbf{A} &= \mathit{c}\mathbf{A} + \mathit{d}\mathbf{A} \\\\
+    \mathit{c}(\mathbf{A} + \mathbf{B}) &= \mathit{c}\mathbf{A} + \mathit{c}\mathbf{B}
+    \end{aligned}
+
+    \\]
+
+<!--list-separator-->
+
+-  products of two vectors
+
+    there are two kinds of vector products, the scalar product or **"dot" product**, and
+    the vector product or **"cross" product**.
