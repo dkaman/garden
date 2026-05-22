@@ -256,3 +256,117 @@ each dimension.
 the unit vector along the \\(\mathit{x}\\) axis is denoted by \\(\mathbf{\hat{i}}\\),
 the \\(\mathit{y}\\) axis by \\(\mathbf{\hat{j}}\\) and the \\(\mathit{z}\\) axis by
 \\(\mathbf{\hat{k}}\\).
+
+properties of base vectors:
+
+\\[
+
+\begin{aligned}
+\mathbf{\hat{i}}\cdot\mathbf{\hat{i}} &= \mathbf{\hat{j}}\cdot\mathbf{\hat{j}} = \mathbf{\hat{k}}\cdot\mathbf{\hat{k}} = 1 \\\\
+\mathbf{\hat{i}}\cdot\mathbf{\hat{j}} &= \mathbf{\hat{j}}\cdot\mathbf{\hat{k}} = \mathbf{\hat{k}}\cdot\mathbf{\hat{i}} = 0 \\\\
+\mathbf{\hat{i}}\times\mathbf{\hat{j}} &= \mathbf{\hat{k}} \\\\
+\mathbf{\hat{j}}\times\mathbf{\hat{k}} &= \mathbf{\hat{i}} \\\\
+\mathbf{\hat{k}}\times\mathbf{\hat{i}} &= \mathbf{\hat{j}}
+\end{aligned}
+
+\\]
+
+any vector can be  written in terms of these base vectors:
+
+\begin{equation}
+\mathbf{A} = \mathit{A}\_x\mathbf{\hat{i}} + \mathit{A}\_y\mathbf{\hat{j}} + \mathit{A}\_z\mathbf{\hat{k}}
+\end{equation}
+
+{{< figure src="/assets/base-vector-example.png" >}}
+
+to compute the cross product of vectors using base vectors:
+
+\begin{equation}
+\mathbf{A}\times\mathbf{B} = (\mathit{A}\_x\mathbf{\hat{i}} + \mathit{A}\_y\mathbf{\hat{j}} + \mathit{A}\_z\mathbf{\hat{k}}) \times (\mathit{B}\_x\mathbf{\hat{i}} + \mathit{B}\_y\mathbf{\hat{j}} + \mathit{B}\_z\mathbf{\hat{k}})
+\end{equation}
+
+considering the first term gives us:
+
+\begin{equation}
+\mathit{A}\_x\mathbf{\hat{i}}\times\mathbf{B} = \mathit{A}\_x\mathit{B}\_x(\mathbf{\hat{i}}\times\mathbf{\hat{i}}) + \mathit{A}\_x\mathit{B}\_y(\mathbf{\hat{i}}\times\mathbf{\hat{j}}) + \mathit{A}\_x\mathit{B}\_z(\mathbf{\hat{i}}\times\mathbf{\hat{k}})
+\end{equation}
+
+because \\(\mathbf{\hat{i}}\times\mathbf{\hat{i}} = 0\\), \\(\mathbf{\hat{i}}\times\mathbf{\hat{j}} = \mathbf{\hat{k}}\\), and \\(\mathbf{\hat{i}}\times\mathbf{\hat{k}} = -\mathbf{\hat{j}}\\), this gives:
+
+\begin{equation}
+\mathit{A}\_x\mathbf{\hat{i}}\times\mathbf{B} = \mathit{A}\_x(\mathit{B}\_y\mathbf{\hat{k}} - \mathit{B}\_z\mathbf{\hat{j}})
+\end{equation}
+
+applying this to \\(\mathit{y}\\) and \\(\mathit{z}\\) components gives:
+
+\\[
+
+\begin{aligned}
+\mathit{A}\_y\mathbf{\hat{j}}\times\mathbf{B} &= \mathit{A}\_y(\mathit{B}\_z\mathbf{\hat{i}} - \mathit{B}\_z\mathbf{\hat{k}}) \\\\
+\mathit{A}\_z\mathbf{\hat{k}}\times\mathbf{B} &= \mathit{A}\_z(\mathit{B}\_x\mathbf{\hat{j}} - \mathit{B}\_y\mathbf{\hat{i}})
+\end{aligned}
+
+\\]
+
+a simple way to remember this is to write the base vectors and the components of
+\\(\mathbf{A}\\) and \\(\mathbf{B}\\) as three rows of a determinant:
+
+\\[
+
+\begin{aligned}
+\mathbf{A}\times\mathbf{B} &=
+\begin{vmatrix}
+\mathbf{\hat{i}} & \mathbf{\hat{j}} & \mathbf{\hat{k}} \\\\
+\mathit{A}\_x     & \mathit{A}\_y     & \mathit{A}\_z     \\\\
+\mathit{B}\_x     & \mathit{B}\_y     & \mathit{B}\_z
+\end{vmatrix} \\\\
+&= \mathbf{\hat{i}}(\mathit{A}\_y\mathit{B}\_z - \mathit{A}\_z\mathit{B}\_y) - \mathbf{\hat{j}}(\mathit{A}\_x\mathit{B}\_z - \mathit{A}\_z\mathit{B}\_x) + \mathbf{\hat{k}}(\mathit{A}\_x\mathit{B}\_y - \mathit{A}\_y\mathit{B}\_x)
+\end{aligned}
+
+\\]
+
+plugging in \\(\mathbf{A} = \mathbf{\hat{i}} + 3\mathbf{\hat{j}} - \mathbf{\hat{k}}\\) and \\(\mathbf{B} = 4\mathbf{\hat{i}} + \mathbf{\hat{j}} + 3\mathbf{\hat{k}}\\):
+
+\\[
+
+\begin{aligned}
+\mathbf{A}\times\mathbf{B} &=
+\begin{vmatrix}
+\mathbf{\hat{i}} & \mathbf{\hat{j}} & \mathbf{\hat{k}} \\\\
+1                & 3                & -1               \\\\
+4                & 1                & 3
+\end{vmatrix} \\\\
+&= 10\mathbf{\hat{i}} - 7\mathbf{\hat{j}} - 11\mathbf{\hat{k}}
+\end{aligned}
+
+\\]
+
+
+### displacement and the position vector {#displacement-and-the-position-vector}
+
+vectors are perfect for describing **kinematical laws**, or the laws governing the
+geometric properties of motion.
+
+to locate the position of a point in space, we must first set up a coordinate
+system. for convenience we select the three-dimensional cartesian system with
+axes \\(\mathit{x}\\), \\(\mathit{y}\\), and \\(\mathit{z}\\).
+
+in order to measure position, we have to mark these axes off in a convenient
+unit of length, meters for instance. then you give its values of the three
+coordinates, \\(x\_1, y\_1, z\_1\\). if we move this to a new position, \\(x\_2, y\_2,
+z\_2\\), then the **displacement** defines a vector \\(\mathbf{S}\\) with coordinates
+\\(\mathit{S}\_x = x\_2 - x\_1, \mathit{S}\_y = y\_2 - y\_1, \mathit{S}\_z = z\_2 - z\_1\\).
+
+{{< figure src="/assets/displacement-vector.png" >}}
+
+this vector defines displacement of a point of interest, it contains no
+information about the initial and final positions seperately, only about the
+relative positions of each. Thus, \\(\mathit{S}\_z = z\_2 - z\_1\\) depends on the
+_difference_ between the final and initial values, but it doesn't specify the
+values seperately. additionally, the values of the coordinates depend on the
+coordinate system, but the vector itself does not.
+
+a convention used is that a magnitude of a vector has dimensions so the unit
+vectors are dimensionless. for example, a displacement of 8 meters in the \\(x\\)
+direction is \\(\mathbf{S} = (8m, 0, 0)\\). \\(\lvert\mathbf{S}\rvert = 8m\\), and
+\\(\mathbf{\hat{S}} = \frac{\mathbf{S}}{\lvert\mathbf{S}\rvert} = \mathbf{\hat{i}}\\).
