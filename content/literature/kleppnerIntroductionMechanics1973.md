@@ -370,3 +370,87 @@ a convention used is that a magnitude of a vector has dimensions so the unit
 vectors are dimensionless. for example, a displacement of 8 meters in the \\(x\\)
 direction is \\(\mathbf{S} = (8m, 0, 0)\\). \\(\lvert\mathbf{S}\rvert = 8m\\), and
 \\(\mathbf{\hat{S}} = \frac{\mathbf{S}}{\lvert\mathbf{S}\rvert} = \mathbf{\hat{i}}\\).
+
+the **position vector** is a special vector that starts at the origin of a given
+coordinate system and extends to the point of interest. this is specified by the
+symbol \\(\mathbf{r}\\).
+
+
+### velocity and acceleration {#velocity-and-acceleration}
+
+
+#### motion in one dimension {#motion-in-one-dimension}
+
+the average velocity \\(\bar{v}\\) of a point in 1 dimension between two
+times \\(t\_1\\) and \\(t\_2\\) is given by:
+
+\begin{equation}
+\bar{v} = \frac{x(t\_2) - x(t\_1)}{t\_2 - t\_1}
+\end{equation}
+
+the bar indicates the average of a quantity.
+
+the instantaneous velocity is the limit of this as the time interval approaches 0
+
+\begin{equation}
+v = \lim\_{\Delta t \to 0} \frac{x(t + \Delta t) - x(t)}{\Delta t}
+\end{equation}
+
+which is the definition of a **derivative**. acceleration is calculated the same
+way using a function of velocity.
+
+
+#### motion in several dimensions {#motion-in-several-dimensions}
+
+for a particle moving in a plane:
+
+\begin{equation}
+\mathbf{r}(t\_1) = [x(t\_1), y(t\_1)]
+\end{equation}
+
+the displacement of this particle between two times is given by
+
+\begin{equation}
+\mathbf{r}\_2 - \mathbf{r}\_1 = (x\_2 - x\_1, y\_2 - y\_1)
+\end{equation}
+
+more generally, if we consider a time \\(t\\), and a slightly later time \\(t + \Delta t\\),
+the displaement is:
+
+\begin{equation}
+\Delta\mathbf{r} = \mathbf{r}(t + \Delta t) - \mathbf{r}(t)
+\end{equation}
+
+which is equivalent to the two scalar equations:
+
+\\[
+
+\begin{aligned}
+\Delta x &= x(t + \Delta t) - x{t} \\\\
+\Delta y &= y(t + \Delta t) - y(t)
+\end{aligned}
+
+\\]
+
+the velocity of the particle as it moves along the path is given by:
+
+\\[
+
+\begin{aligned}
+\mathbf{v} &= \lim\_{\Delta t \to 0} \frac{\Delta\mathbf{r}}{\Delta t} \\\\
+           &= \frac{d\mathbf{r}}{dt}
+\end{aligned}
+
+\\]
+
+in three dimensions, since \\(\mathbf{r} = x\mathbf{\hat{i}} + y\mathbf{\hat{j}} + z\mathbf{\hat{k}}\\),
+
+\begin{equation}
+\frac{d\mathbf{r}}{dt} = \frac{dx}{dt}\mathbf{\hat{i}} + \frac{dy}{dt}\mathbf{\hat{j}} + \frac{dz}{dt}\mathbf{\hat{k}}
+\end{equation}
+
+
+### formal solutions to kinematical equations {#formal-solutions-to-kinematical-equations}
+
+once we know the acceleration of a body, finding the velocity and position is a
+matter of integration.
