@@ -8,7 +8,7 @@ draft: false
 Fink, Bruce. <i>The Lacanian Subject: Between Language and Jouissance</i>. Princeton University Press, 1996.
 
 
-## one {#one}
+## part one - structure: alienation and the other {#part-one-structure-alienation-and-the-other}
 
 
 ### language and otherness {#language-and-otherness}
